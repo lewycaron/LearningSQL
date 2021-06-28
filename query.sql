@@ -1,4 +1,10 @@
 SELECT *
-FROM HumanResources.Employee
-WHERE HireDate BETWEEN '2009/01/01' and '2010/01/01'
-ORDER BY HireDate 
+FROM Person.Person
+WHERE BusinessEntityID NOT IN (2,3,13)
+
+
+SELECT*
+FROM Person.Person
+WHERE BusinessEntityID = 2
+OR BusinessEntityID = 3
+OR BusinessEntityID = 13
