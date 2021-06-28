@@ -3,14 +3,14 @@
 create database nomeDaBase; -// ultilizado para criar um banco de dados <br>
 drop database nomeDaBase;   -// utilizado para deletar o banco de dados
 
-
+'''
 SELECT
 DISTINCT
 WHERE
 COUNT
 TOP
 ORDER BY
-
+'''
 
 # SELECT
 
