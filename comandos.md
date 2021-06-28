@@ -1,6 +1,6 @@
 ## Estruturas basica de comandos em SQL
 
-create database nomeDaBase; -// ultilizado para criar um banco de dados
+create database nomeDaBase; -// ultilizado para criar um banco de dados <br>
 drop database nomeDaBase;   -// utilizado para deletar o banco de dados
 
 - **SELECT**
@@ -9,7 +9,6 @@ drop database nomeDaBase;   -// utilizado para deletar o banco de dados
 - **COUNT**
 - **TOP**
 - **ORDER BY**
-
 
 ## SELECT
 
@@ -150,7 +149,7 @@ SELECT COUNT(Size)
 FROM Production.Product
 
 
-##TOP
+## TOP
 
 Serve para limitar a quantidade de dados exibidos no resultado
 
@@ -158,7 +157,7 @@ SELECT TOP 1O *
 FROM TABELA
 
 
-##ORDER BY
+## ORDER BY
 
 Permite que você ordene os resultados em uma coluna por ordem crescente ou decrescente.
 
