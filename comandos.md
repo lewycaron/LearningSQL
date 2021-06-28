@@ -28,7 +28,7 @@ Podemos observervar também  que tanto SELECT quanto FROM estão em maiusculo, e
 
 Exemplo pratico a ser utilizado (com o banco de dados "AdventureWorks2017" já instalado)
 
-    "Gostaria de selecionar todos os nomes mais comuns no sistema e preciso de uma lista de todos os nomes cadastrados no sistema."
+Gostaria de selecionar todos os nomes mais comuns no sistema e preciso de uma lista de todos os nomes cadastrados no sistema.
 
 a soluçao seria:
 
@@ -60,7 +60,7 @@ SELECT coluna1, coluna2, colunaX
 FROM tabela
 WHERE condição;
 
-/*
+>
 
 Operadores   -   Descriçao
 
@@ -73,7 +73,8 @@ Operadores   -   Descriçao
 AND             OPERADOR LOGICO E
 OR              OPERADOR LOGICO OU
 
-*/
+>
+
 
 exemplo:
 
