@@ -1,3 +1,2 @@
-SELECT COUNT(Name)
-FROM Production.Product
-WHERE NAME LIKE '%road%';
+SELECT DISTINCT Lastname
+FROM Person.Person
