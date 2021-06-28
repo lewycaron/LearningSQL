@@ -1,7 +1,11 @@
 # Estruturas básica de comandos em SQL
 
-- create database nomeDaBase; (ultilizado para criar um banco de dados).
-- drop database nomeDaBase;   (utilizado para deletar o banco de dados).
+Comandos utilizados para criar e deletar um bando de dados.
+
+```
+create database nomeDaBase; 
+drop database nomeDaBase; 
+```
 
 - **SELECT**
 - **DISTINCT**
