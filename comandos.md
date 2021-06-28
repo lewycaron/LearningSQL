@@ -1,18 +1,17 @@
-# Estruturas basica de comandos em SQL
+## Estruturas basica de comandos em SQL
 
 create database nomeDaBase; -// ultilizado para criar um banco de dados
 drop database nomeDaBase;   -// utilizado para deletar o banco de dados
 
+- **SELECT**
+- **DISTINCT**
+- **WHERE**
+- **COUNT**
+- **TOP**
+- **ORDER BY**
 
-SELECT
-DISTINCT
-WHERE
-COUNT
-TOP
-ORDER BY
 
-
-# SELECT
+## SELECT
 
 o comando SELECT é utilizado para selecionar colunas especificas definidas pela tabela dentro do comando FROM como exemplo abaixo:
 
@@ -28,7 +27,7 @@ Podemos observervar também  que tanto SELECT quanto FROM estão em maiusculo, e
 
 Exemplo pratico a ser utilizado (com o banco de dados "AdventureWorks2017" já instalado)
 
-    "Gostaria de selecionar todos os nomes mais comuns no sistema e preciso de uma lista de todos os nomes cadastrados no sistema."
+Gostaria de selecionar todos os nomes mais comuns no sistema e preciso de uma lista de todos os nomes cadastrados no sistema.
 
 a soluçao seria:
 
@@ -36,7 +35,7 @@ SELECT FirsName, LastName
 FROM Person.Person
 
 
-# DiSTINCT
+## DiSTINCT
 
 Utilizado para retornar valores exatos sem contar os valores duplicados de uma coluna dentro de uma tabela.
 
@@ -52,7 +51,7 @@ SELECT DISTINCT Lastname
 FROM Person.Person
 
 
-# WHERE 
+## WHERE 
 
 Usado para extrair apenas algumas inforçoes das tabelas.
 
@@ -60,8 +59,7 @@ SELECT coluna1, coluna2, colunaX
 FROM tabela
 WHERE condição;
 
-/*
-
+```
 Operadores   -   Descriçao
 
 =               IGUAL
@@ -72,15 +70,15 @@ Operadores   -   Descriçao
 <>              DIFERENTE
 AND             OPERADOR LOGICO E
 OR              OPERADOR LOGICO OU
+```
 
-*/
 
 exemplo:
-
+ 
 SELEC *
 FROM Person.Person
 WHERE color = 'blue' OR color = 'black'
-
+ 
 
 SELEC *
 FROM Production.product
@@ -112,7 +110,7 @@ FROM Person.EmailAddress
 WHERE BusinessEntityID = '26'
 
 
-# COUNT
+## COUNT
 
 Serve para definir exatamente o numero de linhas definido pela condição.
 
@@ -139,20 +137,20 @@ FROM Person.Person
 
 teremos um retorno de apenas 6 titulos diferente na tabela inteira.
 
---Quantos produtos temos cadastrados em nossa tabela de produtos (production.Product)
+Quantos produtos temos cadastrados em nossa tabela de produtos (production.Product)
 
 
 SELECT count(*)
 FROM Production.Product
 
 
--- Quantos tamanhos de produtos temos cadastrados em nossa tabela
+Quantos tamanhos de produtos temos cadastrados em nossa tabela
 
 SELECT COUNT(Size)
 FROM Production.Product
 
 
-# TOP
+##TOP
 
 Serve para limitar a quantidade de dados exibidos no resultado
 
@@ -160,7 +158,7 @@ SELECT TOP 1O *
 FROM TABELA
 
 
-# ORDER BY
+##ORDER BY
 
 Permite que você ordene os resultados em uma coluna por ordem crescente ou decrescente.
 
@@ -185,14 +183,14 @@ ORDER BY MiddleName asc/desc
 *(Por boa prática alguns bancos de dados não permitem um ordenamento por colunas que não foram citadas no SELECT)*
 
 
--- Obter o Productid dos 10 produtos mais caros cadastrados no sistema,s listando do mais caro para o mais barato.
+Obter o Productid dos 10 produtos mais caros cadastrados no sistema,s listando do mais caro para o mais barato.
 
 SELECT TOP 10 ProductID
 FROM Production.Product
 ORDER BY ListPrice desc
 
 
--- Obeter o nome e o numero do produto dos produtos que tem o producid entre 1-4
+Obeter o nome e o numero do produto dos produtos que tem o producid entre 1-4
 
 SELECT TOP 4 Name, ProductNumber
 FROM Production.Product
