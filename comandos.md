@@ -12,7 +12,7 @@ TOP
 ORDER BY
 '''
 
-# SELECT
+## SELECT
 
 o comando SELECT é utilizado para selecionar colunas especificas definidas pela tabela dentro do comando FROM como exemplo abaixo:
 
@@ -36,7 +36,7 @@ SELECT FirsName, LastName
 FROM Person.Person
 
 
-# DiSTINCT
+## DiSTINCT
 
 Utilizado para retornar valores exatos sem contar os valores duplicados de uma coluna dentro de uma tabela.
 
@@ -52,7 +52,7 @@ SELECT DISTINCT Lastname
 FROM Person.Person
 
 
-# WHERE 
+## WHERE 
 
 Usado para extrair apenas algumas inforçoes das tabelas.
 
@@ -60,7 +60,6 @@ SELECT coluna1, coluna2, colunaX
 FROM tabela
 WHERE condição;
 
->
 
 Operadores   -   Descriçao
 
@@ -72,8 +71,6 @@ Operadores   -   Descriçao
 <>              DIFERENTE
 AND             OPERADOR LOGICO E
 OR              OPERADOR LOGICO OU
-
->
 
 
 exemplo:
@@ -113,7 +110,7 @@ FROM Person.EmailAddress
 WHERE BusinessEntityID = '26'
 
 
-# COUNT
+## COUNT
 
 Serve para definir exatamente o numero de linhas definido pela condição.
 
@@ -153,7 +150,7 @@ SELECT COUNT(Size)
 FROM Production.Product
 
 
-# TOP
+## TOP
 
 Serve para limitar a quantidade de dados exibidos no resultado
 
@@ -161,7 +158,7 @@ SELECT TOP 1O *
 FROM TABELA
 
 
-# ORDER BY
+## ORDER BY
 
 Permite que você ordene os resultados em uma coluna por ordem crescente ou decrescente.
 
